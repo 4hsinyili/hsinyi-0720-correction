@@ -31,7 +31,7 @@ def wrong_solution(S):
         char = S[index]
         if char != ' ' and char != '/' and char != '-':
             tmp.append(str(char))
-            # Fault: loop_count will always less than 0, so the condition won't work.
+            # Fault: loop_count will always less than length, so the condition won't work as I thought.
             if (loop_count % 3
                     == 0) and (loop_count < length) and (loop_count > 1):
                 tmp.append('-')
